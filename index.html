@@ -10,7 +10,13 @@
 </head>
 <body>
     <header>
-        <nav id="navbar"></nav>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -60,21 +66,49 @@
         </section>
 
         <section id="code">
-            <h2>My code repositories</h2>
+            <h2>Code</h2>
             <p>See more about my projects and experiments on:</p>
-            <ul class="links">
-                <li><a target="_blank" href="https://github.com/Joadevy">Github</a></li>
-                <li><a target="_blank" href="https://codepen.io/joadevy">Codepen</a></li>
+            <ul class="links-container">
+                <li class="link">
+                    <div class="code-logo">
+                        <img src="/src/assets/icons/github-logo.png" alt="" aria-hidden="true">
+                    </div>
+                    <a target="_blank" href="https://github.com/Joadevy">Github</a>
+                </li>
+
+                <li class="link">
+                    <div class="code-logo">
+                        <img src="src/assets/icons/codepen-logo.png" alt="" aria-hidden="true">
+                    </div>
+                    <a target="_blank" href="https://codepen.io/joadevy">Codepen</a>
+                </li>
             </ul>
         </section>
 
         <section id="contact">
-            <h2>Contact me</h2>
+            <h2>Contact</h2>
             <p>You can reach me at:</p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="links-container">
+                <li class="link">
+                    <div>
+                        <img src="src/assets/icons/gmail-logo.png" alt="" aria-hidden="true">
+                    </div>
+                    <a href="mailto:jjoaquinarlettaz@gmail.com">Email</a>
+                </li>
+
+                <li class="link">
+                    <div>
+                        <img src="/src/assets/icons/linkedin-logo.png" alt="" aria-hidden="true">
+                    </div>
+                    <a href="#">Linkedin</a>
+                </li>
+
+                <li class="link">
+                    <div>
+                        <img src="src/assets/icons/twitter-logo.png" alt="" aria-hidden="true">
+                    </div>
+                    <a href="https://twitter.com/jjoadev">Twitter</a>
+                </li>
             </ul>
         </section>
     </main>
