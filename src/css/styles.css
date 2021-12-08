@@ -457,6 +457,11 @@ body main #projects h2 + p {
   margin-top: -1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  body main {
+    padding: 0 1rem;
+  }
+}
 .project-tile {
   display: flex;
   border-width: 2px;
