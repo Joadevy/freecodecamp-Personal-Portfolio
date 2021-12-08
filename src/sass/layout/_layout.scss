@@ -13,15 +13,16 @@ body {
             border-radius: 5px;
             width: 20%;
             height: 50px;
+            display: flex;
+            justify-content: center;
 
             ul {
-                display: flex;
                 align-items: center;
-                gap: 1rem;
+                display: flex;
+                gap: .5rem;
                 list-style-type: none;
                 a{
                     text-decoration: none;
-                    text-align: center;
                     color: white;
 
                     &:hover {
@@ -36,27 +37,35 @@ body {
         margin-top: 75px;
         padding: 0 17.5rem;
 
+        section {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid green;
+            margin-bottom: 5rem;
+    
+            h2+p {
+                margin-top: .25rem;
+            }
+        }
+
         #welcome-section {
             margin-top: -75px;
             height: 100vh;
-            display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
 
             a {
                 color: var(--cyan);
                 text-decoration: none;
+                scroll-behavior: smooth;
             }
         }
         
         #projects {
-            display: flex;
-            flex-direction: column;
             gap: 1.25rem;
 
             h2+p {
-                margin-top: -2rem;
+                margin-top: -1rem;
             }
         }
     }

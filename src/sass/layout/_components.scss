@@ -1,8 +1,14 @@
 .project-tile {
     display: flex;
     border: 1px solid white;
-    padding: .15rem 1rem;
+    padding: 1.25rem;
     justify-content: space-between;
+
+    .project-desc {
+        p {
+            margin-top: .25rem;
+        }
+    }
 
     .project-links {
         display: flex;

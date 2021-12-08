@@ -7,19 +7,18 @@ h1,h2,h3{
 }
 
 p {
-    opacity: 70%;
+    opacity: 60%;
 }
 
 section {
-    
     h2 {
         font-size: 2rem;
         text-align: left;
     }
+
     h2+p {
         text-align: left;
-        margin-top: -.75rem;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
 }
 
@@ -28,7 +27,7 @@ section {
         font-size: 2.5rem;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         line-height: 1.5rem;
     }
 }
@@ -41,6 +40,7 @@ section {
 
         p {
             font-size: 1.1rem;
+            font-style: italic;
         }
     }
 }
