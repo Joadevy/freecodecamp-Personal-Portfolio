@@ -455,7 +455,9 @@ body main #projects h2 + p {
 
 .project-tile {
   display: flex;
-  border: 1px solid white;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, white 10%, #8867cf 20%, #8266d0 43%, #7c65d1 56%, #5964d3 73%, #4ca4a3 98%) 1;
   padding: 1.25rem;
   justify-content: space-between;
 }
