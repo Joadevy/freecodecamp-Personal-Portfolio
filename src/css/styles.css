@@ -396,42 +396,65 @@ section h2 + p {
 .social__link span, .social__link a {
   font-size: 1.05rem;
 }
-.social__link span {
-  opacity: 75%;
-}
-.social__link a {
-  text-decoration: none;
-}
 
 body {
   background-color: var(--dark-theme);
   color: var(--text-color);
 }
 body header #navbar {
-  border: 0.5px solid var(--violet);
-  background-color: var(--dark-theme-soft);
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-left: 0.25rem;
   border-radius: 5px;
-  width: 15%;
-  height: 50px;
+  border: 0.5px solid var(--violet);
+  background-color: var(--dark-theme);
+  position: fixed;
   display: flex;
-  justify-content: center;
+  left: 0;
+  z-index: 10;
+  padding: 0.25rem;
 }
-body header #navbar ul {
-  align-items: center;
+body header #navbar .nav__checkbox {
+  display: none;
+}
+body header #navbar .nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+body header #navbar .nav__checkbox:checked ~ ul.nav__menu {
+  margin: 1rem 2rem 1rem 1rem;
+}
+body header #navbar .nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+body header #navbar .nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+body header #navbar .nav__toggle {
   display: flex;
-  flex-wrap: wrap;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+body header #navbar .nav__toggle svg {
+  fill: var(--cyan);
+  width: 2rem;
+}
+body header #navbar .nav__toggle .close {
+  display: none;
+  padding-left: 0.5rem;
+}
+body header #navbar .nav__menu {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
   gap: 0.5rem;
+}
+body header #navbar .nav__menu li {
+  display: none;
   list-style-type: none;
 }
-body header #navbar ul a {
+body header #navbar .nav__menu li a {
   text-decoration: none;
   color: white;
 }
-body header #navbar ul a:hover {
+body header #navbar .nav__menu li a:hover {
   color: var(--cyan);
 }
 body main {
@@ -471,12 +494,6 @@ body main #projects h2 + p {
 }
 
 @media only screen and (max-width: 768px) {
-  body header #navbar {
-    height: 100px;
-    padding: 0 2rem;
-    align-items: center;
-    flex-direction: column;
-  }
   body main {
     padding: 0 1rem;
   }

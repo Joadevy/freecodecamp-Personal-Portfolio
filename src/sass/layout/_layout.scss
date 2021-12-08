@@ -4,30 +4,69 @@ body {
 
     header {
         #navbar {
-            border: .5px solid var(--violet);
-            background-color: var(--dark-theme-soft);
-            position: fixed;
-            top: 0;
-            left: 0;
-            margin-left: .25rem;
             border-radius: 5px;
-            width: 15%;
-            height: 50px;
+            border: .5px solid var(--violet);
+            background-color: var(--dark-theme);
+            position: fixed;
             display: flex;
-            justify-content: center;
+            left: 0;
+            z-index: 10;
+            padding:.25rem;
 
-            ul {
-                align-items: center;
+            .nav__checkbox {
+                display: none;
+
+                &:checked ~ ul.nav__menu li {
+                    display: block;
+                }
+
+                &:checked ~ ul.nav__menu {
+                    margin: 1rem 2rem 1rem 1rem;
+                }
+
+                &:checked ~ label.nav__toggle .close {
+                    display: block;
+                }
+
+                &:checked ~ label.nav__toggle .menu {
+                    display: none;
+                }
+            }
+
+            .nav__toggle{
                 display: flex;
-                flex-wrap: wrap;
-                gap: .5rem;
-                list-style-type: none;
-                a{
-                    text-decoration: none;
-                    color: white;
+                justify-self: center;
+                align-self: center;
+                cursor: pointer;
 
-                    &:hover {
-                        color: var(--cyan);
+                svg {
+                    fill: var(--cyan); 
+                    width: 2rem;
+                }
+
+                .close {
+                    display: none;
+                    padding-left: .5rem; 
+                }
+
+            }
+
+            .nav__menu {
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                li {
+                    display: none;
+                    list-style-type: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover {
+                            color: var(--cyan);
+                        }
                     }
                 }
             }
@@ -80,14 +119,6 @@ body {
 
 @media only screen and (max-width:768px){
     body {
-        header {
-            #navbar {
-                height: 100px;
-                padding: 0 2rem;
-                align-items: center;
-                flex-direction: column;
-            }
-        }
         main {
             padding: 0 1rem;
         }   
