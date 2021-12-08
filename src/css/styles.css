@@ -481,4 +481,9 @@ body main #projects h2 + p {
   text-decoration: underline;
 }
 
+svg {
+  width: 1.5rem;
+  fill: var(--text-color);
+}
+
 /*# sourceMappingURL=styles.css.map */
