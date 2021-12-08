@@ -40,8 +40,9 @@ body {
         section {
             display: flex;
             flex-direction: column;
-            border: 1px solid green;
             margin-bottom: 5rem;
+            border-bottom: .5px solid var(--gray-border);
+            padding-bottom: 5rem;
     
             h2+p {
                 margin-top: .25rem;
@@ -53,6 +54,7 @@ body {
             height: 100vh;
             align-items: center;
             justify-content: center;
+            border-bottom: none;
 
             a {
                 color: var(--cyan);
