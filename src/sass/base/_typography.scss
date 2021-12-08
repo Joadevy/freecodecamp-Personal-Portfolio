@@ -10,6 +10,19 @@ p {
     opacity: 70%;
 }
 
+section {
+    
+    h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+    h2+p {
+        text-align: left;
+        margin-top: -.75rem;
+        font-size: 1.1rem;
+    }
+}
+
 #welcome-section {
     h1 {
         font-size: 2.5rem;
@@ -20,3 +33,14 @@ p {
     }
 }
 
+#projects {
+    .project-desc {
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}

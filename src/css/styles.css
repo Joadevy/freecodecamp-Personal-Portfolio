@@ -357,12 +357,29 @@ p {
   opacity: 70%;
 }
 
+section h2 {
+  font-size: 2rem;
+  text-align: left;
+}
+section h2 + p {
+  text-align: left;
+  margin-top: -0.75rem;
+  font-size: 1.1rem;
+}
+
 #welcome-section h1 {
   font-size: 2.5rem;
 }
 #welcome-section p {
   font-size: 1.2rem;
   line-height: 1.5rem;
+}
+
+#projects .project-desc h3 {
+  font-size: 1.25rem;
+}
+#projects .project-desc p {
+  font-size: 1.1rem;
 }
 
 body {
@@ -391,6 +408,9 @@ body header #navbar ul a {
   text-align: center;
   color: white;
 }
+body header #navbar ul a:hover {
+  color: var(--cyan);
+}
 body main {
   margin-top: 75px;
   padding: 0 17.5rem;
@@ -406,6 +426,34 @@ body main #welcome-section {
 body main #welcome-section a {
   color: var(--cyan);
   text-decoration: none;
+}
+body main #projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+body main #projects h2 + p {
+  margin-top: -2rem;
+}
+
+.project-tile {
+  display: flex;
+  border: 1px solid white;
+  padding: 0.15rem 1rem;
+  justify-content: space-between;
+}
+.project-tile .project-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.project-tile .project-links a {
+  text-decoration: none;
+  color: var(--cyan);
+}
+.project-tile .project-links a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */

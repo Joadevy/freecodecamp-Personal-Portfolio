@@ -1,0 +1,22 @@
+.project-tile {
+    display: flex;
+    border: 1px solid white;
+    padding: .15rem 1rem;
+    justify-content: space-between;
+
+    .project-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .25rem;
+        
+        a {
+            text-decoration: none;
+            color: var(--cyan);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
