@@ -44,3 +44,18 @@ section {
         }
     }
 }
+
+.social__link {
+    span, a{
+        font-size: 1.05rem;
+    }
+
+    span {
+        opacity: 75%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+

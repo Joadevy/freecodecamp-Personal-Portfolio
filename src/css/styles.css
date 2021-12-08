@@ -393,6 +393,16 @@ section h2 + p {
   font-style: italic;
 }
 
+.social__link span, .social__link a {
+  font-size: 1.05rem;
+}
+.social__link span {
+  opacity: 75%;
+}
+.social__link a {
+  text-decoration: none;
+}
+
 body {
   background-color: var(--dark-theme);
   color: var(--text-color);
@@ -450,6 +460,9 @@ body main #welcome-section a {
   text-decoration: none;
   scroll-behavior: smooth;
 }
+body main #welcome-section a:hover {
+  color: var(--violet);
+}
 body main #projects {
   gap: 1.25rem;
 }
@@ -458,6 +471,12 @@ body main #projects h2 + p {
 }
 
 @media only screen and (max-width: 768px) {
+  body header #navbar {
+    height: 100px;
+    padding: 0 2rem;
+    align-items: center;
+    flex-direction: column;
+  }
   body main {
     padding: 0 1rem;
   }
@@ -469,6 +488,7 @@ body main #projects h2 + p {
   border-image: linear-gradient(90deg, white 10%, #8867cf 20%, #8266d0 43%, #7c65d1 56%, #5964d3 73%, #4ca4a3 98%) 1;
   padding: 1.25rem;
   justify-content: space-between;
+  transition: transform 0.75s;
 }
 .project-tile .project-desc p {
   margin-top: 0.25rem;
@@ -485,6 +505,9 @@ body main #projects h2 + p {
 }
 .project-tile .project-links a:hover {
   text-decoration: underline;
+}
+.project-tile:hover {
+  transform: scale(1.01);
 }
 
 .links-container {
@@ -504,8 +527,16 @@ body main #projects h2 + p {
   align-items: center;
   gap: 0.5rem;
 }
+.links-container .social__link span {
+  opacity: 75%;
+}
 .links-container .social__link a {
   margin-left: -0.25rem;
+  text-decoration: none;
+  color: var(--cyan);
+}
+.links-container .social__link a:hover {
+  color: var(--violet);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,6 +5,7 @@
     border-image: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(136,103,207,1) 20%, rgba(130,102,208,1) 43%, rgba(124,101,209,1) 56%, rgba(89,100,211,1) 73%, rgba(76,164,163,1) 98%) 1;
     padding: 1.25rem;
     justify-content: space-between;
+    transition: transform .75s;
 
     .project-desc {
         p {
@@ -26,6 +27,10 @@
                 text-decoration: underline;
             }
         }
+    }
+
+    &:hover {
+        transform: scale(1.01);
     }
 }
 
@@ -49,8 +54,18 @@
         align-items: center;
         gap: .5rem;
 
+        span {
+            opacity: 75%;
+        }
+
         a {
             margin-left: -.25rem;
+            text-decoration: none;
+            color: var(--cyan);
+
+            &:hover {
+                color: var(--violet);
+            }
         }
     }
 }

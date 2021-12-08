@@ -61,6 +61,10 @@ body {
                 color: var(--cyan);
                 text-decoration: none;
                 scroll-behavior: smooth;
+
+                &:hover {
+                    color: var(--violet);
+                }
             }
         }
         
@@ -76,6 +80,14 @@ body {
 
 @media only screen and (max-width:768px){
     body {
+        header {
+            #navbar {
+                height: 100px;
+                padding: 0 2rem;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
         main {
             padding: 0 1rem;
         }   
