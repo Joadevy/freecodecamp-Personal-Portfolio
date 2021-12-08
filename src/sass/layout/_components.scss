@@ -29,7 +29,28 @@
     }
 }
 
-svg {
-    width: 1.5rem;
-    fill: var(--text-color);
-} 
+
+
+.links-container {
+    svg {
+        width: 1.5rem;
+        fill: var(--text-color);
+    } 
+
+    margin-top: 1rem;    
+    list-style-type: none;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+    
+    .social__link {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        a {
+            margin-left: -.25rem;
+        }
+    }
+}
