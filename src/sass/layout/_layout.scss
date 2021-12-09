@@ -75,7 +75,7 @@ body {
 
     main {
         margin-top: 75px;
-        padding: 0 17.5rem;
+        padding: 0 1rem;
 
         section {
             display: flex;
@@ -117,10 +117,37 @@ body {
     }
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (min-width: 1024px) {
     body {
+        header {
+            #navbar {
+                background-color: var(--dark-theme-soft);
+                margin-left: .25rem;
+                width: 15%;
+                height: 50px;
+                justify-content: center;
+
+                .nav__checkbox {
+                    display:none;
+                }
+
+                .nav__toggle{
+                    display: none;
+                }
+
+                .nav__menu{
+                    align-items: center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    li {
+                        display: block;
+                    }
+                }
+            }   
+        }
+        
         main {
-            padding: 0 1rem;
+            padding: 0 17.5rem;
         }   
     }
 }
