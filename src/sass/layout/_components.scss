@@ -59,12 +59,27 @@
         }
 
         a {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
             margin-left: -.25rem;
             text-decoration: none;
             color: var(--cyan);
 
-            &:hover {
+            &::before {
+                position: absolute;
+                content: attr(data-content); /* Prints the value of the attribute */
+                top: 0;
+                left: 0;
                 color: var(--violet);
+                overflow: hidden;
+                transition: width 275ms ease;
+                width: 0;
+                white-space: nowrap;
+            }
+
+            &:hover::before {
+                width: 100%;
             }
         }
     }

@@ -479,12 +479,29 @@ body main #welcome-section {
   border-bottom: none;
 }
 body main #welcome-section a {
-  color: var(--cyan);
+  color: var(--violet);
   text-decoration: none;
   scroll-behavior: smooth;
+  display: inline-block;
+  position: relative;
 }
-body main #welcome-section a:hover {
-  color: var(--violet);
+body main #welcome-section a::before {
+  position: absolute;
+  content: attr(data-content);
+  /* Prints the value of the attribute */
+  top: 0;
+  left: 0;
+  color: var(--cyan);
+  overflow: hidden;
+  transition: width 275ms ease;
+  width: 0;
+  white-space: nowrap;
+}
+body main #welcome-section a:hover::before {
+  width: 100%;
+  color: var(--cyan);
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 body main #projects {
   gap: 1.25rem;
@@ -569,12 +586,27 @@ body main #projects h2 + p {
   opacity: 75%;
 }
 .links-container .social__link a {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
   margin-left: -0.25rem;
   text-decoration: none;
   color: var(--cyan);
 }
-.links-container .social__link a:hover {
+.links-container .social__link a::before {
+  position: absolute;
+  content: attr(data-content);
+  /* Prints the value of the attribute */
+  top: 0;
+  left: 0;
   color: var(--violet);
+  overflow: hidden;
+  transition: width 275ms ease;
+  width: 0;
+  white-space: nowrap;
+}
+.links-container .social__link a:hover::before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

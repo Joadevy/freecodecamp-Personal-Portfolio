@@ -97,12 +97,29 @@ body {
             border-bottom: none;
 
             a {
-                color: var(--cyan);
+                color: var(--violet);
                 text-decoration: none;
                 scroll-behavior: smooth;
+                display: inline-block;
+                position: relative;
 
-                &:hover {
-                    color: var(--violet);
+                &::before {
+                    position: absolute;
+                    content: attr(data-content); /* Prints the value of the attribute */
+                    top: 0;
+                    left: 0;
+                    color: var(--cyan);
+                    overflow: hidden;
+                    transition: width 275ms ease;
+                    width: 0;
+                    white-space: nowrap;
+                }
+    
+                &:hover::before {
+                    width: 100%;
+                    color: var(--cyan);
+                    text-decoration: underline;
+                    text-decoration-style: wavy;
                 }
             }
         }
