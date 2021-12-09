@@ -2,6 +2,12 @@ body {
     background-color: var(--dark-theme);
     color: var(--text-color);
 
+    script {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
     header {
         #navbar {
             border-radius: 5px;
@@ -9,7 +15,7 @@ body {
             background-color: var(--dark-theme);
             position: fixed;
             display: flex;
-            left: 0;
+            right: 0;
             z-index: 10;
             padding:.25rem;
 

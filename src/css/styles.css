@@ -401,13 +401,18 @@ body {
   background-color: var(--dark-theme);
   color: var(--text-color);
 }
+body script {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 body header #navbar {
   border-radius: 5px;
   border: 0.5px solid var(--violet);
   background-color: var(--dark-theme);
   position: fixed;
   display: flex;
-  left: 0;
+  right: 0;
   z-index: 10;
   padding: 0.25rem;
 }
