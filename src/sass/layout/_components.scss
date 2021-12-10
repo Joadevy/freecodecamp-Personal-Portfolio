@@ -17,11 +17,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: .25rem;
         
         a {
             text-decoration: none;
             color: var(--cyan);
+            margin-bottom: 0.25rem;
 
             &:hover {
                 text-decoration: underline;
@@ -40,6 +40,7 @@
     svg {
         width: 1.5rem;
         fill: var(--text-color);
+        margin-right: .5rem;
     } 
 
     margin-top: 1rem;    
@@ -47,15 +48,15 @@
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
-    gap: .55rem;
     
     .social__link {
         display: flex;
         align-items: center;
-        gap: .5rem;
+        margin-bottom: 0.55rem;
 
         span {
             opacity: 75%;
+            margin-right: .5rem;
         }
 
         a {

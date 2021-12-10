@@ -61,7 +61,6 @@ body {
                 justify-content: center;
                 display: flex;
                 flex-direction: column;
-                gap: .5rem;
 
                 li {
                     display: none;
@@ -69,6 +68,7 @@ body {
                     a{
                         text-decoration: none;
                         color: white;
+                        margin-bottom: .5rem;
 
                         &:hover {
                             color: var(--cyan);
@@ -131,10 +131,13 @@ body {
         }
         
         #projects {
-            gap: 1.25rem;
-
             h2+p {
-                margin-top: -1rem;
+                margin-top: .25rem;
+                margin-bottom: 1.25rem;
+            }
+
+            .project-tile {
+                margin-bottom: 1.25rem;
             }
         }
     }
@@ -162,8 +165,14 @@ body {
                     align-items: center;
                     flex-direction: row;
                     flex-wrap: wrap;
+                    margin-right: -.5rem;
                     li {
                         display: block;
+
+                        a {
+                            margin-bottom: 0rem;
+                            margin-right: .5rem;
+                        }
                     }
                 }
             }   
